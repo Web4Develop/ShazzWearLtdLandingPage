@@ -3,16 +3,20 @@
 	margin: auto;
 	padding: 0px;
 }
+
 body {
 	background-color: pink;
 	color: ghostwhite;
 	line-height: 5em;
+	text-align: center;
 }
+
 
 /* headed*/
 header {
 	display: block;
 }
+
 header h1 {
 	font-size: 100px;
 	font-style: italic;
@@ -21,93 +25,216 @@ header h1 {
 	color: pink;
 	padding-bottom: 20px;
 }
+
 header h2 {
 	font-size: 30px;
 	text-align: center;
 }
 /* headed end*/
 
-/* top images*/
-.top img {
-	width: 80%;
-	height: 100vh;
-	/*max-height: 1000px;*/
-	border: solid 20px whitesmoke;
-	padding: 20px;
-	box-sizing: border-box;
-	display: block;
+
+/* top */
+.top {
+	/* font-size: 5em; */
+	font-size: 3em;
+	border: solid 20px white;
+	width: 50vw;
+	height: 50vh;
+	position: relative;
+	border-style: dotted;
+	margin: 50px auto;
+	animation: top 7s infinite linear;
+	line-height: 2em;
 }
-/* top images end*/
+
+@keyframes top {
+	0% {border-color: white;}
+	25% {border-color: pink;}
+	50% {border-color: white;}
+	75% {border-color: pink;}
+}
+
+.topInside {
+	top: 4vw;
+	color: rebeccapurple;
+	margin: 20px 0;
+}
+
+/* media top & media topInside */
+@media only screen and (min-width: 566px) {
+	.top {
+		height: 40vh;
+	}
+	.topInside {
+		/* display: none; */
+		/* top: 6vh; */
+	}
+}
+@media only screen and (min-width: 747px) {
+	.top {
+		height: 30vh;
+	}
+	.topInside {
+		margin: 30px 0;
+	}
+}
+
+@media only screen and (min-width: 1478px) {
+	.top {
+		height: 20vh;
+		width: 60vw;
+	}
+	.topInside {
+		margin: 40px 0;
+	}
+}
+/* / media top & media topInside */
+/* top end*/
+
 
 /* middle link*/
 .middle p {
-	font-size: 40px;
+	/* font-size: 40px; */
+	font-size: 3em;
 	text-align: center;
 	width: 90%;
+	margin: 20px auto 90px;
+	line-height: 2.5em;
 }
-.middle a {
+
+/* .middle a {
 	color: rebeccapurple;
 	font-style: italic;
 	text-decoration: none;
 }
+
 .middle a:hover {
 	color: pink;
 	background-color: whitesmoke;
 	transition-duration: 1.5s;
-}
+} */
 /* middle link end*/
 
-/* bottom group pictures*/
-.box {
-	display: grid;
-	
+
+/* checkmark */
+.checkmark {
+	color: pink;
+	background: white;
+	padding: 0 10px;
 }
-.bottom img {
-	width: 200px;
-	height: 300px;
-	border: solid 10px ghostwhite;
-	padding: 10px;
+/* / checkmark */
+
+
+/* bottom image */
+.bottomImage img {
+	min-width: 70%;
+	margin-bottom: 100px;
+	border-radius: 10%;
 }
-.bottom a {
-	display: contents;
-}
-.bottom img:hover {
-	border-color: pink;
-	background-color: ghostwhite;
+/* / bottom image */
+
+
+/* bottom link */
+.bottomLink {
+	text-decoration: none;
+	font-size: 3em;
+	color: pink;
+	background: rebeccapurple;
 	border-radius: 50%;
-	transition: ease-in 1s;
+	padding: 20px;
+	margin: 0 auto;
 }
-.grid {
-	display: grid;
-	grid-template-columns: auto;
+
+.bottomLink:hover {
+	color: rebeccapurple;
+	background: pink;
+	transition: 1.2s linear;
 }
-/* bottom group pictures end*/
+
+/* media bottomLink */
+@media only screen and (min-width: 1000px) {
+	.bottomLink {
+		font-size: 4em;
+	}
+}
+
+@media only screen and (min-width: 1250px) {
+	.bottomLink {
+		font-size: 5em;
+	}
+}
+/* / media bottomLink */
+/* / bottom link */
+
+
+/* arrow */
+.arrow {
+	font-size: 4em;
+	margin: 0 20px;
+	color: rebeccapurple;
+	animation: arrowChange 10s infinite ease-in-out;
+}
+
+@keyframes arrowChange {
+	0% {color: rebeccapurple;}
+	25% { color: white;}
+	50% {color: rebeccapurple;}
+	75% {color: white;}
+}
+
+/* media arrow */
+@media only screen and (min-width: 1000px) {
+	.arrow {
+		font-size: 5em;
+	}
+}
+
+@media only screen and (min-width: 1250px) {
+	.arrow {
+		font-size: 6em;
+	}
+}
+/* / media arrow */
+/* / arrow */
 
 /* footer*/
+footer {
+	margin: 200px 0 50px;
+}
+
 footer p {
 	font-size: 20px;
 	text-align: center;
 	color: black;
 }
-/* footer end*/
 
-/* media*/
-@media only screen and (min-width: 720px) {
-	.grid {
-		grid-template-columns: auto auto;
-	}
+/* W4D */
+.W4D {
+	color: rgba(255,255,255,1);
+	text-decoration: none;
+	background: rgba(0,0,0,1);
+	padding: 10px;
+	margin-left: 5px;
 }
-@media only screen and (min-width: 900px) {
-	.top img {
-		max-width: 60%;
-		height: 100vh;
-	}
-	.grid {
-		margin: 100px;
-	}
-	.bottom img {
-		width: 300px;
-		height: 400px;
-	}
+
+.W4D:hover {
+	font-size: 2em;
+	padding: 10px;
+	background: rgba(255,255,255,1);
+	color: black;
+	margin-left: 10px;
 }
-/* media end*/
+
+.W4D, .W4D:hover {
+	border: solid 5px #16e0bd;
+	border-radius: 30px;
+}
+/* / W4D */
+
+
+/* W4DGreen */
+.W4DGreen {
+	color: #16e0bd;
+}
+/* / W4DGreen */
+/* footer end*/
