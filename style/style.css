@@ -1,0 +1,113 @@
+/* global*/
+* {
+	margin: auto;
+	padding: 0px;
+}
+body {
+	background-color: pink;
+	color: ghostwhite;
+	line-height: 5em;
+}
+
+/* headed*/
+header {
+	display: block;
+}
+header h1 {
+	font-size: 100px;
+	font-style: italic;
+	text-align: center;
+	background-color: whitesmoke;
+	color: pink;
+	padding-bottom: 20px;
+}
+header h2 {
+	font-size: 30px;
+	text-align: center;
+}
+/* headed end*/
+
+/* top images*/
+.top img {
+	width: 80%;
+	height: 100vh;
+	/*max-height: 1000px;*/
+	border: solid 20px whitesmoke;
+	padding: 20px;
+	box-sizing: border-box;
+	display: block;
+}
+/* top images end*/
+
+/* middle link*/
+.middle p {
+	font-size: 40px;
+	text-align: center;
+	width: 90%;
+}
+.middle a {
+	color: rebeccapurple;
+	font-style: italic;
+	text-decoration: none;
+}
+.middle a:hover {
+	color: pink;
+	background-color: whitesmoke;
+	transition-duration: 1.5s;
+}
+/* middle link end*/
+
+/* bottom group pictures*/
+.box {
+	display: grid;
+	
+}
+.bottom img {
+	width: 200px;
+	height: 300px;
+	border: solid 10px ghostwhite;
+	padding: 10px;
+}
+.bottom a {
+	display: contents;
+}
+.bottom img:hover {
+	border-color: pink;
+	background-color: ghostwhite;
+	border-radius: 50%;
+	transition: ease-in 1s;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto;
+}
+/* bottom group pictures end*/
+
+/* footer*/
+footer p {
+	font-size: 20px;
+	text-align: center;
+	color: black;
+}
+/* footer end*/
+
+/* media*/
+@media only screen and (min-width: 720px) {
+	.grid {
+		grid-template-columns: auto auto;
+	}
+}
+@media only screen and (min-width: 900px) {
+	.top img {
+		max-width: 60%;
+		height: 100vh;
+	}
+	.grid {
+		margin: 100px;
+	}
+	.bottom img {
+		width: 300px;
+		height: 400px;
+	}
+}
+/* media end*/
