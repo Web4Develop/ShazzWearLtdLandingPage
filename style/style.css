@@ -1,105 +1,106 @@
 /* global*/
 * {
-	margin: auto;
-	padding: 0px;
+  margin: auto;
+  padding: 0px;
 }
 
 body {
-	background-color: pink;
-	color: ghostwhite;
-	line-height: 5em;
-	text-align: center;
+  background-color: pink;
+  color: ghostwhite;
+  line-height: 5em;
+  text-align: center;
 }
-
 
 /* headed*/
 header {
-	display: block;
+  display: block;
 }
 
 header h1 {
-	font-size: 100px;
-	font-style: italic;
-	text-align: center;
-	background-color: whitesmoke;
-	color: pink;
-	padding-bottom: 20px;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+  background-color: whitesmoke;
+  color: pink;
+  padding-bottom: 20px;
 }
 
 header h2 {
-	font-size: 30px;
-	text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 /* headed end*/
 
-
 /* top */
 .top {
-	/* font-size: 5em; */
-	font-size: 3em;
-	border: solid 20px white;
-	width: 50vw;
-	height: 50vh;
-	position: relative;
-	border-style: dotted;
-	margin: 50px auto;
-	animation: top 7s infinite linear;
-	line-height: 2em;
+  /* font-size: 5em; */
+  font-size: 3em;
+  border: solid 20px white;
+  width: 50vw;
+  height: 50vh;
+  position: relative;
+  border-style: dotted;
+  margin: 50px auto;
+  animation: top 7s infinite linear;
+  line-height: 2em;
 }
 
 @keyframes top {
-	0% {border-color: white;}
-	25% {border-color: pink;}
-	50% {border-color: white;}
-	75% {border-color: pink;}
+  0% {
+    border-color: white;
+  }
+  25% {
+    border-color: pink;
+  }
+  50% {
+    border-color: white;
+  }
+  75% {
+    border-color: pink;
+  }
 }
 
 .topInside {
-	top: 4vw;
-	color: rebeccapurple;
-	margin: 20px 0;
+  top: 4vw;
+  color: rebeccapurple;
+  margin: 20px 0;
 }
 
 /* media top & media topInside */
 @media only screen and (min-width: 566px) {
-	.top {
-		height: 40vh;
-	}
-	.topInside {
-		/* display: none; */
-		/* top: 6vh; */
-	}
+  .top {
+    height: 40vh;
+  }
 }
 @media only screen and (min-width: 747px) {
-	.top {
-		height: 30vh;
-	}
-	.topInside {
-		margin: 30px 0;
-	}
+  .top {
+    height: 30vh;
+  }
+  .topInside {
+    margin: 30px 0;
+  }
 }
 
 @media only screen and (min-width: 1478px) {
-	.top {
-		height: 20vh;
-		width: 60vw;
-	}
-	.topInside {
-		margin: 40px 0;
-	}
+  .top {
+    height: 20vh;
+    width: 60vw;
+  }
+  .topInside {
+    margin: 40px 0;
+  }
 }
 /* / media top & media topInside */
 /* top end*/
 
-
 /* middle link*/
 .middle p {
-	/* font-size: 40px; */
-	font-size: 3em;
-	text-align: center;
-	width: 90%;
-	margin: 20px auto 90px;
-	line-height: 2.5em;
+  /* font-size: 40px; */
+  font-size: 3em;
+  text-align: center;
+  width: 90%;
+  margin: 20px auto 90px;
+  line-height: 2.5em;
 }
 
 /* .middle a {
@@ -115,137 +116,141 @@ header h2 {
 } */
 /* middle link end*/
 
-
 /* checkmark */
 .checkmark {
-	color: pink;
-	background: white;
-	padding: 0 10px;
+  color: pink;
+  background: white;
+  padding: 0 10px;
 }
 /* / checkmark */
 
-
 /* bottom image */
-.bottomImage img {	
-	/* min-width: 70%; */
-	width: 90%;
-	object-fit: cover;
-	object-position: 5px 10px;
-	max-height: 95vh;
-	margin-bottom: 100px;
-	border-radius: 10%;
+.bottomImage img {
+  /* min-width: 70%; */
+  width: 90%;
+  object-fit: cover;
+  object-position: 5px 10px;
+  max-height: 95vh;
+  margin-bottom: 100px;
+  border-radius: 10%;
 }
 
 /* / bottom image */
 
-
 /* bottom link */
 .bottomLink {
-	text-decoration: none;
-	font-size: 2.5em;
-	color: pink;
-	background: rebeccapurple;
-	border-radius: 50%;
-	padding: 20px;
-	margin: 0 auto;
+  text-decoration: none;
+  font-size: 2.5em;
+  color: pink;
+  background: rebeccapurple;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .bottomLink:hover {
-	color: rebeccapurple;
-	background: pink;
-	transition: 1.2s linear;
+  color: rebeccapurple;
+  background: pink;
+  transition: 1.2s linear;
 }
 
 /* media bottomLink */
 @media only screen and (min-width: 700px) {
-	.bottomLink {
-		font-size: 4em;
-	}
+  .bottomLink {
+    font-size: 4em;
+  }
 }
 
 @media only screen and (min-width: 1150px) {
-	.bottomLink {
-		font-size: 8em;
-	}
+  .bottomLink {
+    font-size: 8em;
+  }
 }
 /* / media bottomLink */
 /* / bottom link */
 
-
 /* arrow */
 .arrow {
-	font-size: 4em;
-	margin: 0 20px;
-	color: rebeccapurple;
-	animation: arrowChange 10s infinite ease-in-out;
-	position: relative;
-	left: 5px;
-	top: 5px;
+  font-size: 4em;
+  margin: 0 20px;
+  color: rebeccapurple;
+  animation: arrowChange 10s infinite ease-in-out;
+  position: relative;
+  left: 5px;
+  top: 5px;
 }
 
 @keyframes arrowChange {
-	0% {color: rebeccapurple;}
-	25% { color: white;}
-	50% {color: rebeccapurple;}
-	75% {color: white;}
+  0% {
+    color: rebeccapurple;
+  }
+  25% {
+    color: white;
+  }
+  50% {
+    color: rebeccapurple;
+  }
+  75% {
+    color: white;
+  }
 }
 
 /* media arrow */
 @media only screen and (min-width: 700px) {
-	.arrow {
-		font-size: 5em;
-		top: 5px;
-	}
+  .arrow {
+    font-size: 5em;
+    top: 5px;
+  }
 }
 
 @media only screen and (min-width: 1150px) {
-	.arrow {
-		font-size: 8em;
-		left: 15px;
-		top: -10px;
-	}
+  .arrow {
+    font-size: 8em;
+    left: 15px;
+    top: -10px;
+  }
 }
 /* / media arrow */
 /* / arrow */
 
 /* footer*/
 footer {
-	margin: 200px 0 50px;
+  margin: 200px 0 50px;
 }
 
 footer p {
-	font-size: 20px;
-	text-align: center;
-	color: black;
+  font-size: 20px;
+  text-align: center;
+  color: black;
 }
 
 /* W4D */
 .W4D {
-	color: rgba(255,255,255,1);
-	text-decoration: none;
-	background: rgba(0,0,0,1);
-	padding: 10px;
-	margin-left: 5px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 1);
+  padding: 10px;
+  margin-left: 5px;
 }
 
 .W4D:hover {
-	font-size: 2em;
-	padding: 10px;
-	background: rgba(255,255,255,1);
-	color: black;
-	margin-left: 10px;
+  font-size: 2em;
+  padding: 10px;
+  background: rgba(255, 255, 255, 1);
+  color: black;
+  margin-left: 10px;
 }
 
-.W4D, .W4D:hover {
-	border: solid 5px #16e0bd;
-	border-radius: 30px;
+.W4D,
+.W4D:hover {
+  border: solid 5px #16e0bd;
+  border-radius: 30px;
 }
 /* / W4D */
 
-
 /* W4DGreen */
 .W4DGreen {
-	color: #16e0bd;
+  color: #16e0bd;
 }
 /* / W4DGreen */
 /* footer end*/
