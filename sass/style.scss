@@ -10,6 +10,7 @@ a {
 
 body {
   background: pink;
+  cursor: default;
 }
 
 header {
@@ -49,17 +50,20 @@ header {
 }
 
 .image {
+  a {
+    cursor: default;
+  }
   img {
     width: 100%;
     height: 300px;
     object-fit: contain;
+    cursor: pointer;
   }
 }
 
 .buttonAndArrows {
   margin: 10px 0 50px;
   animation: buttonAndArrowsFill 5s infinite alternate;
-  // padding: 10px;
   button {
     font-size: 30px;
     padding: 0px 20px;
@@ -67,6 +71,7 @@ header {
     background: transparent;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
   }
   .arrows {
     animation: arrowsFill 5s infinite alternate;
@@ -141,6 +146,10 @@ header {
       height: 50px;
     }
   }
+}
+
+footer {
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 1000px) {
